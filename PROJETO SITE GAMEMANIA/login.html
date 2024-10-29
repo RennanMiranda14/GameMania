@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            background: rgb(60, 195, 242);
+            background: radial-gradient(circle, rgba(60, 195, 242, 1) 0%, rgba(44, 60, 224, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da janela */
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.89);
+            border-radius: 10px; /* Bordas arredondadas do contêiner */
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            width: 300px; /* Largura do bloco de login */
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; /* Largura total */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Bordas arredondadas dos campos */
+            box-sizing: border-box; /* Para incluir o padding e border no tamanho total */
+        }
+        button {
+            width: 100%; /* Largura total */
+            padding: 10px;
+            background-color: #44c7f9; /* Cor de fundo do botão */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Bordas arredondadas do botão */
+            color: white;
+            font-size: 16px;
+            cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+        }
+        button:hover {
+            background-color: #3a9ec4; /* Cor do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <center><img style="text-align: center;" src="logogamemania.png" width="300" height="auto"> <h2>ÁREA DE CLIENTES</h2></center>
+        <form>
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <a href="index.html"> <h4>RETORNAR AO INÍCIO </h4></a>
+            <a href="index.html"> <h4>Esqueci a Senha<h4></a>
+        </form>
+     
+    </div> 
+    
+</body>
+</html>
