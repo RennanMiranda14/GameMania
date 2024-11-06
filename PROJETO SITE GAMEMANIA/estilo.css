@@ -1,171 +1,227 @@
+/* Estilo para o corpo da página */
 body { 
-    margin-bottom: 5000px;
-    text-align: center;
-    font-family: Arial, sans-serif; 
-    color: white; 
-    background: rgb(60, 195, 242);
-    background: radial-gradient(circle, rgba(60, 195, 242, 1) 0%, rgba(44, 60, 224, 1) 100%);
-    overflow-y: auto; /* Garante a rolagem vertical */
+  margin-bottom: 5000px; /* Define um espaçamento extra na parte inferior da página */
+  text-align: center; /* Centraliza o texto na página */
+  font-family: Arial, sans-serif; /* Define a fonte usada no corpo do texto */
+  color: white; /* Cor do texto */
+  background: rgb(60, 195, 242); /* Cor de fundo inicial */
+  background: radial-gradient(circle, rgba(60, 195, 242, 1) 0%, rgba(44, 60, 224, 1) 100%); /* Gradiente radial de fundo */
+  overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a tela */
 }
 
+/* Estilos para o slogan (frase chamativa) */
+.slogan {
+  list-style-type: none; /* Remove os marcadores da lista */
+  text-align: center; /* Centraliza o texto da lista */
+  font-size: 20px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: white; /* Cor do texto */
+  margin-top: 10px; /* Espaço superior */
+  font-family: 'Arial', sans-serif; /* Fonte usada no slogan */
+  margin-left: -1450px; /* Desloca o slogan para a esquerda */
+}
+
+/* Estilo para cada item da lista dentro do slogan */
+.slogan li {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+  animation: fadeIn 2s ease-in-out; /* Aplica uma animação de fade-in */
+}
+
+/* Definição da animação 'fadeIn' */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Opacidade inicial 0 (invisível) */
+    transform: translateY(20px); /* Inicia com um deslocamento para baixo */
+  }
+  100% {
+    opacity: 1; /* Opacidade final 1 (visível) */
+    transform: translateY(0); /* Sem deslocamento */
+  }
+}
+
+/* Estilo do container do cabeçalho */
 .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex; /* Define o layout flexível */
+  flex-direction: row; /* Alinha os itens na horizontal */
+  justify-content: space-between; /* Espaço igual entre os itens */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  padding: 10px; /* Preenchimento de 10px em todos os lados */
 }
 
+/* Estilo para o logo no cabeçalho */
 .logo {
-    margin-left: 20px;
+  margin-left: 20px; /* Espaçamento à esquerda do logo */
 }
 
-nav {
-    margin: 0;
-    padding: 0;
-}
-
+/* Estilos para o retângulo decorativo */
 .rectangulo {
-    width: 830px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.89);
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.829);
-    margin-right: 20px;
-    position: relative;
-    z-index: 1;
+  width: 830px; /* Largura do retângulo */
+  height: 30px; /* Altura do retângulo */
+  background-color: rgba(255, 255, 255, 0.89); /* Cor de fundo do retângulo */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 2px solid rgba(255, 255, 255, 0.829); /* Borda do retângulo */
+  margin-right: 20px; /* Espaçamento à direita */
+  position: relative; /* Permite manipulação de posição */
+  z-index: 1; /* Define a sobreposição, sendo 1 o valor mais baixo */
 }
 
+/* Estilos para o menu de navegação */
 .menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    position: relative; /* Mantém a posição relativa */
-    top: -145px; /* Mantém a sobreposição do menu sobre a forma branca */
-    z-index: 2;
-    left: 500px;
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento */
+  margin: 0; /* Remove a margem */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza os itens do menu */
+  position: relative; /* Permite manipulação de posição */
+  top: -155px; /* Move o menu para cima */
+  z-index: 2; /* Z-index maior para sobrepor outros elementos */
+  left: 500px; /* Move o menu para a direita */
 }
 
+/* Estilo para cada item do menu */
 .menu li {
-    margin: 0 20px;
+  margin: 0 20px; /* Espaço entre os itens do menu */
 }
 
+/* Estilo para os links do menu */
 .menu li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado */
+  color: black; /* Cor do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
 }
 
+/* Efeito de hover nos links do menu */
 .menu li a:hover {
-    color: red; /* Altera a cor da fonte para vermelho */
-    transition: color 0.3s; /* Suaviza a transição da cor */
+  color: red; /* Cor vermelha ao passar o mouse */
+  transition: color 0.3s; /* Transição suave na mudança de cor */
 }
 
+/* Estilo para o robô (imagem) */
 .robot {
-    transition: transform 0.6s; /* Suaviza a transição */
-    display: inline-block; /* Necessário para aplicar transformações */
-    margin-left: 1300px; /* Mantém o posicionamento da imagem */
+  transition: transform 0.6s; /* Suaviza a transição do efeito de transformação */
+  display: inline-block; /* Exibe a imagem como um bloco inline */
+  margin-left: 1300px; /* Move a imagem para a direita */
 }
 
-.robot:hover {
-    transform: rotateY(180deg); /* Gira a imagem em 180 graus no eixo Y */
+/* Estilo para o container de filtros */
+.filtro-container {
+  width: 800px; /* Largura do filtro */
+  margin-right: 0px; /* Remove a margem direita */
+  background-color: #f8f9fa; /* Cor de fundo do filtro */
+  padding: 15px; /* Preenchimento interno do filtro */
+  border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilo para o título dentro do filtro */
+.filtro-container h4 {
+  font-size: 16px; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo para o select dentro do filtro */
+.filtro-container select {
+  width: 100%; /* Largura total do select */
+  padding: 5px; /* Preenchimento do select */
+  font-size: 14px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda do select */
+}
+
+/* Estilos para o container de produtos */
+.produtos-grid {
+  flex-grow: 1; /* O grid ocupa o espaço restante */
+  margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Estilos para a seção da loja */
 .loja {
-    background: rgb(180, 58, 83);
-    background: linear-gradient(90deg, rgba(180, 58, 83, 1) 0%, rgba(253, 29, 60, 1) 50%, rgba(252, 69, 131, 1) 100%);
-    padding: 400px;
-    margin: 20px 0;
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens */
+  background: rgb(180, 58, 83); /* Cor de fundo inicial */
+  background: linear-gradient(90deg, rgba(180, 58, 83, 1) 0%, rgba(253, 29, 60, 1) 50%, rgba(252, 69, 131, 1) 100%); /* Gradiente linear */
+  padding: 50px; /* Preenchimento de 50px */
+  margin: 20px 0; /* Margens superior e inferior */
 }
 
-.carousel-item img {
-    height: 250px; /* Defina a altura desejada para as imagens */
-    object-fit: cover; /* Cobre o espaço do contêiner sem distorcer a imagem */
+/* Estilos para o título da loja */
+.loja h2 {
+  color: #f8f9fa; /* Cor do título */
+  font-family: 'Quantico', sans-serif; /* Fonte usada no título */
 }
 
-.footer {
-    background: rgb(243, 244, 245);
-    background: radial-gradient(circle, rgba(243, 244, 245, 1) 0%, rgba(203, 203, 203, 1) 100%);
-    padding: 20px;
-    margin-top: 20px;
+/* Estilos para o container dos produtos */
+.produtos-container {
+  display: flex; /* Layout flexível */
+  overflow-x: auto;  /* Habilita rolagem horizontal */
+  gap: 15px;         /* Espaçamento entre os cards */
+  padding-bottom: 10px;  /* Espaço extra na parte inferior */
+  width: 53%;       /* Define uma largura fixa para o container */
+  max-width: 1400px;  /* Limita a largura máxima */
 }
 
-/* Estilização dos botões do carrossel */
-.button {
-    display: block;
-    position: relative;
-    width: 56px;
-    height: 56px;
-    margin: 0;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-  }
-  
-  /* (Demais regras de estilo) */
-  
-  
-  .button:before,
-  .button:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 7px;
-  }
-  
-  .button:before {
-    border: 4px solid #f0eeef;
-    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-      transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-  }
-  
-  .button:after {
-    border: 4px solid #96daf0;
-    transform: scale(1.3);
-    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-      transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    opacity: 0;
-  }
-  
-  .button:hover:before,
-  .button:focus:before {
-    opacity: 0;
-    transform: scale(0.7);
-    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-      transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  
-  .button:hover:after,
-  .button:focus:after {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-      transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-  }
-  
-  .button-box {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .button-elem {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin: 17px 18px 0 18px;
-    transform: rotate(180deg);
-    fill: #f0eeef;
-  }
-  
-  .button:hover .button-box,
-  .button:focus .button-box {
-    transition: 0.4s;
-    transform: translateX(-56px);
-  }
-  
+/* Estilos para cada card de produto */
+.card {
+  flex-shrink: 0; /* Impede que o card encolha */
+  width: 18rem;   /* Largura fixa para cada card */
+  margin: 10px;   /* Espaço ao redor do card */
+}
+
+/* Estilos para a imagem do card */
+.card img {
+  height: 200px; /* Altura da imagem */
+  object-fit: cover; /* A imagem cobre a área do card sem distorcer */
+}
+
+/* Estilos para o corpo do card */
+.card-body {
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Alinha os itens na vertical */
+  justify-content: space-between; /* Espaça os itens verticalmente */
+  height: 100%; /* Altura total do corpo do card */
+}
+
+/* Estilos para o botão primário */
+.btn-primary {
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none; /* Remove a borda */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Preenchimento do botão */
+  text-align: center; /* Alinha o texto ao centro */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito de hover no botão */
+.btn-primary:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: rgb(40, 44, 48); /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Preenchimento do rodapé */
+  margin-top: 50px; /* Espaço superior */
+}
+
+footer ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento */
+}
+
+footer ul li {
+  display: inline-block; /* Exibe os itens da lista na horizontal */
+  margin: 10px; /* Espaço entre os itens */
+}
+
+footer ul li a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Cor do texto */
+}
+
+/* Efeito de hover nos links do rodapé */
+footer ul li a:hover {
+  color: #ff9800; /* Cor laranja ao passar o mouse */
+}
